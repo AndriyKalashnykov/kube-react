@@ -3,12 +3,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <p>
+        <button onClick={refreshPage}>Click to reload!</button>
         </p>
         <a
           className='App-link'
