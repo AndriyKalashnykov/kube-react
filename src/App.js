@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import logo from './logo.svg';
 import './App.css';
 
@@ -10,6 +11,12 @@ function App() {
 
   return (
     <div className='App'>
+      <Helmet>
+        <title>My App</title>
+        <meta charSet="utf-8" />
+        <meta name="description" content="A React.js application" />
+        <meta http-equiv="refresh" content="35"></meta>
+      </Helmet>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
         <p>
