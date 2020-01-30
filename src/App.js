@@ -10,13 +10,17 @@ function App() {
 
   return (
     <div className='App'>
+      <MetaTags>
+        <title>Page 1</title>
+        <meta http-equiv="refresh" content="35" ></meta>
+      </MetaTags>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-        <button onClick={refreshPage}>Click to reload!</button>
+          <button onClick={refreshPage}>Click to reload!</button>
         </p>
         <a
           className='App-link'
