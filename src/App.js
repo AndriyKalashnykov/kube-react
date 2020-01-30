@@ -1,4 +1,5 @@
 import React from 'react';
+import MetaTags from 'react-meta-tags';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,8 +12,7 @@ function App() {
   return (
     <div className='App'>
       <MetaTags>
-        <title>Page 1</title>
-        <meta http-equiv="refresh" content="35" ></meta>
+        <meta http-equiv="refresh" content="35"></meta>
       </MetaTags>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
